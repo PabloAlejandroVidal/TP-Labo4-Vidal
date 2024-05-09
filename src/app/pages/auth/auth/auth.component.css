@@ -1,0 +1,9 @@
+.auth{
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+}
+.auth__btn{
+  width: 14em;
+}

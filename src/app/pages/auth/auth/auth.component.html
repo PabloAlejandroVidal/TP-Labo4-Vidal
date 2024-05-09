@@ -1,0 +1,21 @@
+<!-- @if (isLoggedIn()) {
+  <app-welcome></app-welcome>
+}
+@else{
+  @if (showLogin) {
+    <app-login></app-login>
+    <button (click)="showLogin = !showLogin">Ir a la página registro</button>
+  }
+  @else {
+    <app-register></app-register>
+    <button (click)="showLogin = !showLogin">Ir a la página login</button>
+  }
+} -->
+
+
+
+<div class="auth">
+  <router-outlet/>
+  <button class="auth__btn" *ngIf="isLoginRouteActive()" (click)="goRegister()">Ir a la página registro</button>
+  <button class="auth__btn" *ngIf="isRegisterRouteActive()" (click)="goLogin()">Ir a la página login</button>
+</div>

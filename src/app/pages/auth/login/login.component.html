@@ -1,0 +1,25 @@
+<h3>Iniciar Sesión</h3>
+<form class="form-login" (ngSubmit)="login()">
+
+  <div class="form-login__row">
+    <label class="form-login__label" for="email">Email</label>
+    <input class="form-login__input" name="email" id="email" type="email" [(ngModel)]="authData.email">
+  </div>
+  <div class="form-login__row">
+    <label class="form-login__label" for="pass">Password</label>
+    <input class="form-login__input" name="pass" id="pass" type="password" [(ngModel)]="authData.password">
+  </div>
+  <div class="form-login__row">
+    <button class="form-login__button" type="submit">Login</button>
+  </div>
+
+  <div class="form-login__row">
+    <button class="form-login__button-load" type="button" (click)="fillFieldsWithUser()">Cargar Usuario</button>
+  </div>
+
+@if (msgResult) {
+  <div>
+    <p>{{msgResult}}</p>
+  </div>
+}
+</form>

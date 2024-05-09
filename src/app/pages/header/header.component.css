@@ -1,0 +1,20 @@
+.header{
+  background-color: rgb(36, 134, 255);
+}
+.header__li{
+  display: flex;
+  justify-content: right;
+}
+.header__ul{
+  min-width: 6em;
+  list-style: none;
+  text-align: center;
+  padding: .5em 1em;
+}
+.header__ul:hover{
+  background-color: rgb(83, 165, 237);
+  cursor: pointer;
+}
+.header__ul:active{
+  background-color: rgb(23, 106, 178);
+}

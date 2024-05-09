@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "laboratorio-4-13a5b"
+  },
+  "targets": {
+    "laboratorio-4-13a5b": {
+      "hosting": {
+        "laboratorio-4-tp": [
+          "laboratorio-4-13a5b"
+        ]
+      }
+    }
+  }
+}

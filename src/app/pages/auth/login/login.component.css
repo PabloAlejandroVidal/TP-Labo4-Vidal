@@ -1,0 +1,30 @@
+.form-login{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: baseline;
+  align-items: center;
+  padding: 1em;
+  background-color: rgb(71, 190, 190);
+  height: 16em;
+}
+.form-login__row{
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+  width: 100%;
+}
+.form-login__label{
+}
+.form-login__input{
+}
+.form-login__button{
+  margin-inline: auto;
+  width: 10em;
+}
+.form-login__button-load{
+  margin-inline: auto;
+  width: 12em;
+  color: rgb(208, 90, 0);
+}

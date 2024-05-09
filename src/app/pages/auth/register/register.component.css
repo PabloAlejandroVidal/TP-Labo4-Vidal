@@ -1,0 +1,26 @@
+.form-register{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: baseline;
+
+  height: 16em;
+  padding: 1em;
+  background-color: rgb(71, 190, 190);
+  align-items: center;
+}
+.form-register__row{
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+  width: 100%;
+}
+.form-register__label{
+}
+.form-register__input{
+}
+.form-register__button{
+  margin-inline: auto;
+  width: 10em;
+}

@@ -1,0 +1,19 @@
+<h3>Registrate</h3>
+<form class="form-register" (ngSubmit)="register()">
+  <div class="form-register__row">
+    <label class="form-register__label" for="pass">Email</label>
+    <input class="form-register__input" name="email" id="email" type="email" [(ngModel)]="authData.email">
+  </div>
+  <div class="form-register__row">
+    <label class="form-register__label" for="pass">Password</label>
+    <input class="form-register__input" name="pass" id="pass" type="password" [(ngModel)]="authData.password">
+  </div>
+<div class="form-register__row">
+  <button class="form-register__button" type="submit">Register</button>
+</div>
+@if (msgResult) {
+  <div>
+    <p>{{msgResult}}</p>
+  </div>
+}
+</form>
